@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.Contracts;
 
-namespace TrophyClassLibrary
+namespace TrophyClassLibrary.TrophyClassLibrary
 {
     public class Trophy
     {
@@ -13,7 +13,7 @@ namespace TrophyClassLibrary
             get => _competition;
             set
             {
-                if ( value == null)
+                if (value == null)
                 {
                     throw new ArgumentNullException("Competition name cannot be null.");
                 }

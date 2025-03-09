@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrophyClassLibrary
+namespace TrophyClassLibrary.TrophyClassLibrary
 {
     public class TrophiesRepo
     {
@@ -36,7 +36,7 @@ namespace TrophyClassLibrary
             {
                 result = result.Where(t => t.Year > trophyYearAfter);
             }
-            if(orderBy != null)
+            if (orderBy != null)
             {
                 orderBy = orderBy.ToLower();
                 switch (orderBy)
